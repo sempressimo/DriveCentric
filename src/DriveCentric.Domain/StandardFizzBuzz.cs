@@ -1,17 +1,12 @@
-﻿using System;
+﻿using DriveCentric.Application.Interfaces;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Text;
 
-namespace Svc.FizzBuzz.Business
+namespace DriveCentric.Domain
 {
-    public class FizzBuzz
+    public class StandardFizzBuzz : IFizzBuzz
     {
-        public FizzBuzz()
-        {
-
-        }
-
         public List<string> GetList(int max, int divisor1, int divisor2, string word1, string word2)
         {
             if (max < 1 || max > 100)
